@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page || Mohamed Esam</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <section class="glass">
+    <!-- Header -->
+    <header>
+      <h2 class="logo">.logo</h2>
+      <nav>
+        <li style="--i: 1"><a href="#home">home</a></li>
+        <li style="--i: 2"><a href="#about">about</a></li>
+        <li style="--i: 3"><a href=" #services">services</a></li>
+        <li style="--i: 4"><a href="#contact">contact</a></li>
+      </nav>
+      <div class="btns">
+        <button class="btn btn-bg">Sign Up</button>
+        <button class="btn" id="animateBtn">Login</button>
+      </div>
+    </header>
+    <!-- End Of Header -->
+    <main>
+      <div class="menu_bar"><i class="fa-solid fa-bars"></i>
+        <div class="links_in_bar">
+          <li style="--i: 1"><a href="#home">home</a></li>
+          <li style="--i: 2"><a href="#about">about</a></li>
+          <li style="--i: 3"><a href=" #services">services</a></li>
+          <li style="--i: 4"><a href="#contact">contact</a></li>
+        </div>
+      </div>
+      <section class="section-1">
+        <h2>Hello,<br>
+          I'm <span>Mohamed Esam</span></h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <a class="btn-bg">Download Cv</a>
+      </section>
+
+      <section class="section-2">
+        <div class="image">
+          <img src="img/shape2.png" alt="shabe of out website">
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        created by <span> Mohamed Salama </span>&copy;
+        <span id="data">2023</span>
+      </p>
+      <div class="social">
+        <a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.instagram.com/mohamedsalama6820/" target="_blank"><i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </footer>
+  </section>
+  <script>
+    let dateNow = new Date();
+    let theYear = dateNow.getFullYear();
+    data.innerHTML = theYear;
+
+    let menu_bar = document.querySelector(".menu_bar");
+    let elemnt_in_menu = document.querySelector(".menu_bar .links_in_bar")
+    menu_bar.addEventListener("click", () => {
+      elemnt_in_menu.classList.toggle("active")
+    })
+  </script>
+</body>
+
+</html>
