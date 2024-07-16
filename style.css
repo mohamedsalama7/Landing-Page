@@ -348,6 +348,10 @@ footer {
   }
 
   .menu_bar {
+    display: inline-block;
+    opacity: 0;
+    animation: show 1s ease forwards;
+    animation-delay: 2s;
     z-index: 10;
     position: absolute;
     right: 30px;
@@ -355,7 +359,6 @@ footer {
     font-size: 24px;
     color: white;
     cursor: pointer;
-    display: inline-block;
 
     & .links_in_bar {
       position: absolute;
@@ -380,6 +383,12 @@ footer {
         background: rgba(0, 0, 0, 0.2);
       }
     }
+  }
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
   }
 }
 
