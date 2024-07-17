@@ -206,7 +206,7 @@ a.btn-bg {
 
 main {
   display: flex;
-  height: calc(100% - 100px);
+  flex-direction: row !important;
   align-items: center;
   justify-content: space-between;
   padding: 0 5%;
@@ -336,6 +336,18 @@ footer {
 }
 
 @media (max-width:767px) {
+  main {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+
+  .section-1 {
+    & p span {
+      font-size: 10px;
+
+    }
+  }
+
   a.btn-bg {
     font-size: 14px;
 
@@ -408,11 +420,15 @@ main {
 
 .section-1 {
   float: 1;
+  white-space: wrap;
+  text-align: center;
+  text-wrap: wrap;
 }
 
 .section-2 {
   justify-content: center;
-  justify-content: first baseline;
+  text-align: center;
+
 }
 
 footer {
