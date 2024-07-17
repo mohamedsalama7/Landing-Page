@@ -335,7 +335,7 @@ footer {
   display: none;
 }
 
-@media (max-width:890px) {
+@media (max-width:767px) {
   a.btn-bg {
     font-size: 14px;
 
@@ -403,10 +403,16 @@ main {
   text-align: center;
   justify-content: space-around;
   align-items: center;
+  height: calc(100% - 150px);
 }
 
 .section-1 {
   float: 1;
+}
+
+.section-2 {
+  justify-content: center;
+  justify-content: first baseline;
 }
 
 footer {
@@ -414,8 +420,15 @@ footer {
   font-size: 16px;
   padding: 10px;
 
+  & p {
+    flex: 1;
+    justify-self: flex-end;
+    text-align: center;
+  }
+
   & .social {
     flex: 1;
     display: flex;
+    justify-content: center;
   }
 }
